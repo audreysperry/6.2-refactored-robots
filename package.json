@@ -1,0 +1,17 @@
+{
+  "name": "6.2-refactored-robots",
+  "version": "1.0.0",
+  "description": "Robots for Linkedin",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "jest"
+  },
+  "author": "Audrey",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.31"
+  }
+}
