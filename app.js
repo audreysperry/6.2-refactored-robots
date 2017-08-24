@@ -15,10 +15,10 @@ app.use('/static', express.static('public'));
 
 routes(app);
 
-
+var database = process.env.MONGODB_URI || 'mongodb://localhost:27017/robots2db';
 //connect to the database and start teh server once the connectionis made
-mongo.connect('mongodb://localhost:27017/robots2db', () => {
-  app.listen(3000);
+mongo.connect(database, () => {
+  app.listen(process.env.PORT || 3000);
 });
 
 
